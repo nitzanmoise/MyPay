@@ -1,0 +1,46 @@
+body {
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40vw;
+  height: 70vh;
+}
+form input,
+textarea {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.first p {
+  text-align: center;
+}
+main {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  /* margin-top: 20vh; */
+}
+main h1 {
+  font-family: operetta-12, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em;
+  margin-bottom: 70px;
+}
+#submit {
+  height: 50px;
+}
+#success_message {
+  color: green;
+  font-size: 1.4em;
+}

@@ -1,0 +1,226 @@
+header .solution-header {
+  width: 100%;
+  height: 60vh;
+  background-color: #5c92c5;
+  color: white;
+  text-align: center;
+  padding: 0 50px;
+}
+.solution-header h1 {
+  padding-top: 25vh;
+  font-family: operetta-12, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.solution-header p {
+  font-weight: 500;
+  font-style: italic;
+}
+.solution-info h1 {
+  text-transform: uppercase;
+  color: #5c92c5;
+  font-size: 1.4em;
+  font-family: operetta-12, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.solution-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0 0 0;
+  padding: 0 40px;
+}
+.solution-info {
+  background-color: #f1f9ff;
+  padding: 5px;
+  width: 80vw;
+  height: auto;
+}
+.solution-info p {
+  font-size: 1.1em;
+}
+.solution-img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  margin-top: 50px;
+}
+.card-reader-img {
+  background-image: url("/media/card-reader.jpg");
+}
+.point-of-sale-img {
+  background-image: url("/media/point-of-sale.jpg");
+  background-position: bottom;
+  background-size: 600px 500px;
+}
+.web-shop-img {
+  background-image: url("/media/web-shop.jpg");
+}
+/*Main Grid Areas*/
+
+main #forth {
+  grid-area: forth;
+}
+
+main #fifth {
+  grid-area: fifth;
+}
+
+main {
+  display: grid;
+
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: auto;
+
+  grid-template-areas:
+    "first first first first"
+    "seconed seconed seconed seconed"
+    "third third third third"
+    "forth forth forth forth"
+    "fifth fifth fifth fifth";
+}
+
+main #seconed i {
+  font-size: 15em;
+  padding: 5% 0 0 12%;
+  display: none;
+}
+main #third .values-container {
+  display: flex;
+  margin: 15% 0;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+main #third .value-item {
+  width: 100px;
+}
+main #third .value-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #bce0fd;
+  display: flex;
+  justify-content: center;
+}
+main #third .value-card i {
+  align-self: center;
+  font-size: 2.5em;
+}
+main .call-to-action {
+  margin: 0 0 20% 10%;
+}
+
+@media (min-width: 500px) {
+  .solution-container {
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin: 10% 0; */
+    padding: 0 40px;
+  }
+  .solution-info {
+    width: 35vw;
+    height: 50vh;
+  }
+  .solution-img {
+    width: 35vw;
+    height: 50vh;
+    margin-top: 0;
+  }
+  .solution-info h1 {
+    font-size: 3vw;
+  }
+
+  .solution-info p {
+    font-size: 2.2vw;
+  }
+  main #seconed i {
+    font-size: 15em;
+    padding: 5% 0 0 30%;
+  }
+  main #third .values-container {
+    flex-direction: row;
+    padding: 0 50px;
+    justify-content: space-around;
+  }
+  main #third .value-item {
+    width: 100px;
+  }
+  main #third .value-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #bce0fd;
+    display: flex;
+    justify-content: center;
+  }
+  main #third .value-card i {
+    align-self: center;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 800px) {
+  .solution-container {
+    display: flex;
+    justify-content: space-around;
+    /* margin: 10% 0; */
+    padding: 0 100px;
+  }
+  .solution-info {
+    width: 25vw;
+    height: 50vh;
+    padding: 10px;
+  }
+  .solution-img {
+    width: 25vw;
+    height: 50vh;
+  }
+  .solution-info h1 {
+    font-size: 2vw;
+  }
+
+  .solution-info p {
+    font-size: 1.4vw;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". first first ."
+      ". seconed seconed ."
+      ". third third ."
+      "forth forth forth forth"
+      ". fifth fifth .";
+  }
+  main #seconed i {
+    font-size: 15em;
+    padding: 5% 0 0 30%;
+  }
+  main #third .values-container {
+    display: flex;
+    flex-direction: row;
+    /* margin: 20% 0; */
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-around;
+  }
+  main #third .value-item {
+    width: 120px;
+  }
+  main #third .value-card {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #bce0fd;
+    display: flex;
+    justify-content: baseline;
+  }
+  main #third .value-card i {
+    align-self: center;
+    font-size: 2.5em;
+  }
+}

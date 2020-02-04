@@ -1,0 +1,87 @@
+header .business-header-img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+header .service-header-img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  background-image: url("../media/resturant.jpg");
+}
+header .retail-header-img {
+  background-image: url("../media/retail.jpg");
+  background-position: top;
+}
+header .beauty-header-img {
+  background-image: url("../media/barbar.jpg");
+  background-position: top;
+}
+
+header .business-header-img h1 {
+  text-transform: uppercase;
+  color: #2699fb;
+  font-size: 6vw;
+  font-family: operetta-12, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.business {
+  padding: 30px;
+  width: 64vw;
+  height: 42.2vh;
+  margin-left: 17vw;
+  margin-top: 30vh;
+  box-shadow: 0 0 2px 0px grey;
+  background-color: white;
+}
+
+.business p {
+  font-size: 3.3vw;
+}
+
+@media (min-width: 500px) {
+  .business {
+    width: 44vw;
+    height: 48.2vh;
+    margin-top: 40vh;
+  }
+  header .business-header-img h1 {
+    font-size: 3.2vw;
+  }
+  .business p {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .business {
+    width: 24vw;
+    height: 51.2vh;
+  }
+  header .business-header-img h1 {
+    font-size: 2vw;
+  }
+
+  .business p {
+    font-size: 1.3vw;
+  }
+  header .service-header-img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  main .solutions-hedline {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
