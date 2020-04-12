@@ -37,7 +37,7 @@
                         <a href="./pages/business/beauty.html">Health & Beuty</a>
                     </div>
                 </div>
-                <a href="#">About</a>
+                <a href="./pages/extra/about.html">About</a>
                 <a href="./pages/contact/contact.php">Let's Start</a>
             </div>
             <img src="./media/MyPaylogotake1.png" alt="logo" class="logo" />
@@ -62,7 +62,7 @@
                         <a href="./pages/business/beauty.html">Health & Beuty</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item">About</a>
+                <a href="./pages/extra/about.html" class="nav-item">About</a>
             </div>
         </nav>
 
@@ -73,12 +73,7 @@
     </header>
     <main>
         <section id="first">
-            <h3 class="solutions-text">
-                My-Pay provides a complete payment system for your businnes
-                <br />
-                Deliver superior multi channel customer experience on any sales
-                channel with one payments platform
-            </h3>
+
             <h1 class="solutions-hedline">OUR SOLUTIONS FOR YOUR BUSINESS</h1>
             <div class="solutions-container" style="display: grid;">
                 <div class="solution-item">
@@ -86,7 +81,10 @@
                         <div class="card-item">
                             <h3>MOBILE POS</h3>
                         </div>
-                        <div class="card-reader"></div>
+                        <div class="card-reader-wrapper img-wrapper">
+                            <div class="card-reader"></div>
+
+                        </div>
                     </a>
                 </div>
                 <div class="solution-item ">
@@ -94,7 +92,10 @@
                         <div class="card-item">
                             <h3>Point of sale</h3>
                         </div>
-                        <div class="point-of-sale"></div>
+                        <div class="point-of-sale-wrapper img-wrapper">
+                            <div class="point-of-sale"></div>
+
+                        </div>
                     </a>
                 </div>
 
@@ -103,7 +104,10 @@
                         <div class="card-item">
                             <h3>Web-shop</h3>
                         </div>
-                        <div class="web-shop"></div>
+                        <div class="web-shop-wrapper img-wrapper">
+                            <div class="web-shop"></div>
+
+                        </div>
                     </a>
                 </div>
                 <div class="solution-item">
@@ -111,7 +115,10 @@
                         <div class="card-item">
                             <h3>Orders-app</h3>
                         </div>
-                        <div class="orders-app"></div>
+                        <div class="orders-app-wrapper img-wrapper">
+                            <div class="orders-app"></div>
+
+                        </div>
                     </a>
                 </div>
             </div>
@@ -173,30 +180,18 @@
             </ul>
         </div>
         <div class="copyright">
-            <form action="" style="display: flex; flex-direction: column;"
-          id="subscribe-form"
-          name="subscribe-form"
-          method="post"
-          onsubmit="return false">
+            <form action="" style="display: flex; flex-direction: column;" id="subscribe-form" name="subscribe-form" method="post" onsubmit="return false">
                 <label for="subscribe">Your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required /> <button id="subSubmit" type="submit">Subscribe</button>
             </form>
             <span>Copyright © My Pay, build by Nitzan Moise</span>
         </div>
     </footer>
-     <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/js/mdb.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.11.0/js/mdb.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="/js/main.js"></script>
     <script src="/js/subscribe.js"></script>
-</body>
-
-</html>
+</body></html>
