@@ -8,7 +8,7 @@ $(document).ready(function () {
             $("#error_message").html("All Fields are required");
         } else {
             $("#success_message").html("Email Sent!");
-            Swal.fire("Email Sent!", "success");
+            Swal.fire("Thank You!", "success");
             $("#error_message").html("");
             $.ajax({
                 url: "subscribe.php",

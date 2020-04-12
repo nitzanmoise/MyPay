@@ -1,35 +1,31 @@
 <?php
-$name = $_POST['email'];
-$email = $_POST['email'];
-$message = $_POST['email'];
-$subject = $_POST['email'];
-header('Content-Type: application/json');
-if ($name === ''){
-print json_encode(array('message' => 'Name cannot be empty', 'code' => 0));
-exit();
-}
-if ($email === ''){
-print json_encode(array('message' => 'Email cannot be empty', 'code' => 0));
-exit();
-} else {
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-print json_encode(array('message' => 'Email format invalid.', 'code' => 0));
-exit();
-}
-}
-if ($subject === ''){
-print json_encode(array('message' => 'Subject cannot be empty', 'code' => 0));
-exit();
-}
-if ($message === ''){
-print json_encode(array('message' => 'Message cannot be empty', 'code' => 0));
-exit();
-}
-$content="From: $name \nEmail: $email \nMessage: $message";
-$recipient = "info@mypay.nu";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $content, $mailheader) or die("Error!");
 
+## CONFIG ##
+
+# LIST EMAIL ADDRESS
+$recipient = "info@mypay.nu";
+
+# SUBJECT (Subscribe/Remove)
+$subject = "Subscribe";
+
+## FORM VALUES ##
+
+# SENDER - WE ALSO USE THE RECIPIENT AS SENDER IN THIS SAMPLE
+# DON'T INCLUDE UNFILTERED USER INPUT IN THE MAIL HEADER!
+$sender = $recipient;
+
+# MAIL BODY
+//$body .= "Name: ".$_REQUEST['email']." \n";
+$body .= "Email: ".$_REQUEST['email']." \n";
+# add more fields here if required
+
+## SEND MESSGAE ##
+
+mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");
+
+## SHOW RESULT PAGE ##
+
+header('Content-Type: application/json');
 
 print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
 exit();
