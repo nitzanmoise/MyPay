@@ -28,6 +28,7 @@ body {
         "main main main main"
         "footer footer footer footer";
     color: #555555;
+
 }
 
 nav {
@@ -141,15 +142,16 @@ nav i {
 
 .top-btn {
     background-color: white;
-    color: black;
-    height: 46px;
+ color: #555555;
+    height: 42px;
     cursor: pointer;
     border-radius: 5px;
     position: absolute;
     right: 20px;
     border: 2px solid #bce0fd;
-    font-size: 0.6em;
-    top: 25px;
+    font-size: 0.7em;
+    font-weight: 500;
+    top: 27px;
     margin: 0;
     transition: all 0.6s ease-in-out;
     display: none;
@@ -202,7 +204,7 @@ button:hover {
     color: white;
     font-family: operetta-12, serif;
     font-weight: 500;
-    position: absolute;
+    position:absolute;
     z-index: 10;
     font-style: normal;
 }
@@ -507,7 +509,10 @@ footer form span {
     .nav-bar:last-child a:hover {
         color: #5f96cb;
     }
+    .nav-bar a:active{
+                color: #5f96cb;
 
+    }
     .nav-bar {
         display: flex;
         margin-left: 25%;
@@ -519,8 +524,7 @@ footer form span {
     .nav-bar a {
         font-weight: 600;
         text-decoration: none;
-        color: black;
-
+ color: #555555;
         text-transform: uppercase;
     }
 

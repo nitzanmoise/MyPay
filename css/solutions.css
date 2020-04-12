@@ -221,6 +221,11 @@ main .call-to-action {
 }
 
 @media (min-width: 800px) {
+
+    .nav-bar:first-child a {
+                color: #5f96cb;
+
+    }
     .solution-container {
         display: flex;
         justify-content: space-around;
